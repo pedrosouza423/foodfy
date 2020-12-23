@@ -109,6 +109,7 @@ header a{
     font-family: Roboto-Regular;
     font-size: 14px;
     color: #777777;
+    margin-bottom: 30px;
 }
 
 /* footer */
@@ -126,4 +127,34 @@ footer p{
     color: #999999;
     padding-top: 23px;
     text-align: center;
+}
+
+/* Página Sobre */
+.about{
+    margin-left:231px ;
+    max-width: 940px;
+    margin-top: 50px;
+}
+
+.about h1{
+    margin-bottom: 20px;
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    color: #111111;
+}
+
+.about p{
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-bottom: 20px;
+    
+}
+
+.about h2{
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    color: #111111;
+    margin-bottom: 20px;
 }

@@ -1,0 +1,24 @@
+{
+  "name": "foodfy",
+  "version": "1.0.0",
+  "description": "Site completo para uma empresa de receitas chamada Foodfy",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrosouza423/foodfy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrosouza423/foodfy/issues"
+  },
+  "homepage": "https://github.com/pedrosouza423/foodfy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}

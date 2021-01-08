@@ -3,6 +3,9 @@ const nunjucks = require('nunjucks')
 
 const server = express()
 
+// Importando o data
+const receitas = require('./data')
+
 //Utilizando parte estática da página
 server.use(express.static('public'))
 
@@ -17,15 +20,23 @@ nunjucks.configure("views",{
 
 //Rotas do servidor
 server.get("/", function(req,res){
-    return res.render('index')
+    return res.render('index', {receitas} )
 })
 
 server.get("/receitas", function(req,res){
-    return res.render('receitas')
+    return res.render('receitas', {receitas})
 })
 
 server.get("/sobre", function(req,res){
     return res.render('sobre')
+})
+
+/* Página individual de cada receita */
+server.get("/receitas/:id", function(req,res){
+    const id = req.params.id
+
+    return res.send(id)
+
 })
 
 server.listen(5000, function(){

@@ -4,164 +4,23 @@
     <!--Mais acessadas-->
     <div class="bests">
         <div class="cards">
-            
-            <div class="card" idFoto="assets/burger.png" name="Triplo Bacon burger" by="Jorge Relato">
+
+        {% for receita in receitas %}
+
+            <div class="card" idFoto="{{receita.image}}" name="{{receita.title}}" by="{{receita.author}}">
                 <div class="card-image">
-                    <img src="assets/burger.png" alt="Triplo bacon burger">
+                    <img src="{{receita.image}}" alt="{{receita.title}}">
                 </div>
                 
                 <div class="card-content">
-                    <p>Triplo Bacon burguer</p>
+                    <p>{{receita.title}}</p>
                     <div class="card-chef">
-                        <p>por Jorge Relato</p>
+                        <p>{{receita.author}}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="card" idFoto="assets/pizza.png" name="Pizza 4 estações" by="Fabiana Melo">
-                <div class="card-image">
-                    <img src="assets/pizza.png" alt="Pizza 4 estações">
-                </div>
-                
-                <div class="card-content">
-                    <p>Pizza 4 estações</p>
-                    <div class="card-chef">
-                        <p>por Fabiana Melo</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/espaguete.png" name="Espaguete ao alho" by="Júlia Kinoto">
-                <div class="card-image">
-                    <img src="assets/espaguete.png" alt="Espaguete ao alho">
-                </div>
-                
-                <div class="card-content">
-                    <p>Espaguete ao alho</p>
-                    <div class="card-chef">
-                        <p>por Júlia Kinoto</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/lasanha.png" name="Lasanha mac n' cheese" by="Juliano Vieira">
-                <div class="card-image">
-                    <img src="assets/lasanha.png" alt="Lasanha mac n' cheese">
-                </div>
-                
-                <div class="card-content">
-                    <p>Lasanha mac n' cheese</p>
-                    <div class="card-chef">
-                        <p>por Juliano Vieira</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/doce.png" name="Docinhos pão-do-céu" by="Ricardo Golvea">
-                <div class="card-image">
-                    <img src="assets/doce.png" alt="Docinhos pão-do-céu">
-                </div>
-                
-                <div class="card-content">
-                    <p>Docinhos pão-do-céu</p>
-                    <div class="card-chef">
-                        <p>por Ricardo Golvea</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/asinhas.png" name="Asinhas de Frango ao Barbecue" by="Vania Steroski">
-                <div class="card-image">
-                    <img src="assets/asinhas.png" alt="Asinhas de frango ao Barbecue">
-                </div>
-                
-                <div class="card-content">
-                    <p>Asinhas de frango ao Barbecue</p>
-                    <div class="card-chef">
-                        <p>por Vania Steroski</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/burger.png" name="Triplo Bacon burger" by="Jorge Relato">
-                <div class="card-image">
-                    <img src="assets/burger.png" alt="Triplo bacon burger">
-                </div>
-                
-                <div class="card-content">
-                    <p>Triplo Bacon burguer</p>
-                    <div class="card-chef">
-                        <p>por Jorge Relato</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/pizza.png" name="Pizza 4 estações" by="Fabiana Melo">
-                <div class="card-image">
-                    <img src="assets/pizza.png" alt="Pizza 4 estações">
-                </div>
-                
-                <div class="card-content">
-                    <p>Pizza 4 estações</p>
-                    <div class="card-chef">
-                        <p>por Fabiana Melo</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/espaguete.png" name="Espaguete ao alho" by="Júlia Kinoto">
-                <div class="card-image">
-                    <img src="assets/espaguete.png" alt="Espaguete ao alho">
-                </div>
-                
-                <div class="card-content">
-                    <p>Espaguete ao alho</p>
-                    <div class="card-chef">
-                        <p>por Júlia Kinoto</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/lasanha.png" name="Lasanha mac n' cheese" by="Juliano Vieira">
-                <div class="card-image">
-                    <img src="assets/lasanha.png" alt="Lasanha mac n' cheese">
-                </div>
-                
-                <div class="card-content">
-                    <p>Lasanha mac n' cheese</p>
-                    <div class="card-chef">
-                        <p>por Juliano Vieira</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/doce.png" name="Docinhos pão-do-céu" by="Ricardo Golvea">
-                <div class="card-image">
-                    <img src="assets/doce.png" alt="Docinhos pão-do-céu">
-                </div>
-                
-                <div class="card-content">
-                    <p>Docinhos pão-do-céu</p>
-                    <div class="card-chef">
-                        <p>por Ricardo Golvea</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" idFoto="assets/asinhas.png" name="Asinhas de Frango ao Barbecue" by="Vania Steroski">
-                <div class="card-image">
-                    <img src="assets/asinhas.png" alt="Asinhas de frango ao Barbecue">
-                </div>
-                
-                <div class="card-content">
-                    <p>Asinhas de frango ao Barbecue</p>
-                    <div class="card-chef">
-                        <p>por Vania Steroski</p>
-                    </div>
-                </div>
-            </div>
-            
-
+        {% endfor%}
 
 
         </div>

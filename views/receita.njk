@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>{{receita.title}} - Foodfy</title>
+{% endblock %}
+
+{% block content %}
+    <div class="prato-img">
+        <img src="{{receita.image}}" alt="{{receita.title}}">
+    </div>
+    <h1>{{receita.title}}</h1>
+    <h2>{{receita.author}}</h2>
+
+
+
+{% endblock%}

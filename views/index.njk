@@ -17,7 +17,7 @@
             
             {% for receita in receitas %}
 
-            <div class="card" idFoto="{{receita.image}}" name="{{receita.title}}" by="{{receita.author}}">
+            <div class="card" id="{{receita.id}}" idFoto="{{receita.image}}" name="{{receita.title}}" by="{{receita.author}}">
                 <div class="card-image">
                     <img src="{{receita.image}}" alt="{{receita.title}}">
                 </div>
@@ -36,26 +36,5 @@
     </div>
 
 
-    <!--MODAL-->
-    <div class="modal-overlay">
-        <div class="modal">
-            
-            <div class="modal-image">
-                <img src="" alt="Modal da comida">
-            </div>
-
-            <div class="modal-info">
-                <h2>Asinhas de Frango ao barbecue</h2>
-                <p>por Vania Steroski</p>
-            </div>
-
-            <div class="close-modal">
-                <p>Fechar modal</p>
-            </div>
-
-        </div>
-    </div>
-
-    <script src="scripts.js"></script>
 
 {% endblock %}

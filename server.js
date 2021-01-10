@@ -52,7 +52,10 @@ server.get("/receitas/:index", function (req, res) {
     const receitasIndex = req.params.index
   
     const receita = receitas[receitasIndex]
-    // return res.send(receitas[receitasIndex])
+    
+    if(!receita){
+        return res.send('Essa receita não existe')
+    }
     return res.render('receita',{receita})
 })
 

@@ -11,7 +11,7 @@
 
         {% for receita in receitas %}
 
-            <div class="card" idFoto="{{receita.image}}" name="{{receita.title}}" by="{{receita.author}}">
+            <div class="card" id="{{receita.id}}" idFoto="{{receita.image}}" name="{{receita.title}}" by="{{receita.author}}">
                 <div class="card-image">
                     <img src="{{receita.image}}" alt="{{receita.title}}">
                 </div>
